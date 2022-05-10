@@ -1,0 +1,69 @@
+/* Add styles to the form container */
+#loginForm {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    display: inline-block;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Full-width input fields */
+#loginForm input[type=text],
+#loginForm input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+#loginForm input[type=text]:focus,
+#loginForm input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+#loginForm button {
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    background-color: green;
+}
+
+#loginForm button.loading {
+    background: linear-gradient(to right, green 40%, rgb(25, 206, 64), green 60%);
+    background-size: 200%;
+    animation: gradient 2s ease infinite;
+}
+
+#loginForm output {
+    color: red;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 150%
+    }
+
+    100% {
+        background-position: -50%
+    }
+}
+
+/* Add some hover effects to buttons */
+#loginForm button:hover {
+    opacity: 1;
+}
+
+#loginPopup {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
