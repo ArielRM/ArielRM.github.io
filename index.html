@@ -110,6 +110,12 @@
     <link rel="stylesheet" href="login.css">
     <!--<script src="webio_mqtt.js" type="text/javascript"></script>!-->
     <script src="login.js" type="text/javascript" defer></script>
+    <script>
+        function seleciona_sala(click_ev) {
+            const sala = click_ev.target.id;
+            alert($`sala ${sala} foi selecionada`);
+        }
+    </script>
 </head>
 
 <body>
@@ -151,9 +157,9 @@
 
             <article>
                 <map name="mapa">
-                    <area shape="rect" coords="1,1,150,150" alt="Computer" onclic="alert('F101')" href="/#?F101">
-                    <area shape="rect" coords="1,151,150,301" alt="Computer" onclic="alert('F102')" href="/#?F102">
-                    <area shape="rect" coords="1,301,301,450" alt="Computer" onclic="alert('F103')" href="/#?F103">
+                    <area id="F101" shape="rect" coords="1,1,150,150" alt="Computer" onclick="seleciona_sala(event)">
+                    <area id="F102" shape="rect" coords="1,151,150,301" alt="Computer" onclick="seleciona_sala(event)">
+                    <area id="F103" shape="rect" coords="1,301,301,450" alt="Computer" onclick="seleciona_sala(event)">
                   </map>
 
                 <img src="assets/mapa-exemplo.png" usemap="#mapa"/>
