@@ -150,7 +150,13 @@
             </nav>
 
             <article>
-                <img src="assets/mapa-exemplo.png" />
+                <map name="workmap">
+                    <area shape="rect" coords="1,1,150,150" alt="Computer" onclic="alert('F101')" href="#">
+                    <area shape="rect" coords="1,151,150,301" alt="Computer" onclic="alert('F102')" href="#">
+                    <area shape="rect" coords="1,301,301,450" alt="Computer" onclic="alert('F103')" href="#">
+                  </map>
+
+                <img src="assets/mapa-exemplo.png" usemap="#mapa"/>
             </article>
         </section>
         <section id="loginPopup" style="flex-direction: column;align-items: center;justify-content: center;">
