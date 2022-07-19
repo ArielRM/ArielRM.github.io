@@ -48,11 +48,11 @@ function mostraLogin(fail) {
                     }, Number(psw));
                 }, 1000);
             } else {
-//                 Connect(user, psw, () => {
-//                     onLoginSucceed(formElement, formParent, buttonElement);
-//                 }, (reason) => {
-//                     onLoginFail(formElement, messageElement, buttonElement, reason);
-//                 });
+               Connect(user, psw, () => {
+                    onLoginSucceed(formElement, formParent, buttonElement);
+                }, (reason) => {
+                   onLoginFail(formElement, messageElement, buttonElement, reason);
+                 });
             }
         }
         catch (e) {
