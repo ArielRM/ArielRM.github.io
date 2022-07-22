@@ -1,4 +1,4 @@
-const hostname = "172.16.158.155";// "172.16.158.155" 
+const hostname = "test.mosquitto.org";// "172.16.158.155" 
 const port = 8081;
 const clientId = "webapp" + new Date().getUTCMilliseconds();
 var salaSelec;
